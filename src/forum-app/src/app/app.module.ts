@@ -10,6 +10,7 @@ import { ThemeListItemComponent } from './component/theme-list-item/theme-list-i
 import { HttpClientModule } from '@angular/common/http';
 import { ThemeService } from './service/theme.service';
 import { PostService } from './service/post.service';
+import { UserService } from './service/user.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { PostService } from './service/post.service';
     BrowserModule,
     HttpClientModule
   ],
-  providers: [ThemeService, PostService],
+  providers: [ThemeService, PostService, UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
